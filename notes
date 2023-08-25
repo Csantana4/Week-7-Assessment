@@ -1,0 +1,26 @@
+Results for the tinyArray
+insert 46.74 μs
+append 186.877 μs
+
+Results for the smallArray
+insert 61.755 μs
+append 218.832 μs
+
+Results for the mediumArray
+insert 173.44 μs
+append 165.292 μs
+
+Results for the largeArray,
+insert 8.402042 ms
+append 1.014714 ms
+
+Results for the extraLargeArray
+insert 907.595365 ms
+append 4.017201 ms
+
+
+
+After running the doublerInsert and getSizedArray functions, It looks like when it starts off with the  tinyArray, the insert time is shorter than the append time. As I went through the arrays they would be bigger and the append would slowly start getting more closer to the insert time. Once we reached the mediumArray of 1000, the append time was the shorter function time, and as the array got bigger the more of a distance of time there was between insert as it being the longer time, and the append the shorter time.
+
+Extra Credit:
+Based on my research I think the extraLargeArray with the unshift method  needs to allocate more space in the array and has to increment all the elements that already present in the Array. So the larger the array the more the system has to process. Also The default Complexity of push() is O(1) and unshift() is O(n), so thats why the extraLargeArray with the Unshift method took the longest.
